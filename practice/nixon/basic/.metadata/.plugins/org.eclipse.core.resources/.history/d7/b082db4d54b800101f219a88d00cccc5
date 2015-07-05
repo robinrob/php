@@ -1,0 +1,11 @@
+<?php
+//Adding items to an array using the array keyword.
+
+$a1 = array("Copier", "Inkjet", "Laser", "Photo");
+
+echo "p1[2]: " . $p1[2] . "<br>"
+
+$a2 = array('copier' => "Copier",
+			'inkjet' => "Inkjet",
+			'laser' => "Laser",
+			'photo' => "Photo");

@@ -1,0 +1,43 @@
+<?php
+//Testing various (very useful) array functions.
+
+$test = array("Robin", 4, "Smith");
+print_array($test);
+
+echo "is_array(): " . (is_array($test) ? "yes" : "no") . "<br>";
+echo "count(): " . count($test) . "<br>";
+echo "sort():<br>";
+sort($test);
+print_array($test);
+echo "shuffle():<br>";
+shuffle($test);
+print_array($test);
+echo "explode():<br>";
+explode("Robin A. Smith", 4);
+print_array($test);
+echo "extract():<br>";
+extract($test);
+print_array($test);
+echo "compact():<br>";
+compact($test);
+print_array($test);
+echo "reset():<br>";
+reset($test);
+print_array($test);
+echo "end():<br>";
+end($test);
+print_array($test);
+
+
+
+function print_array($array)
+{
+	$j = 0;
+	foreach($array as $item)
+	{
+		echo "array[" . $j++ . "]: $item<br>";
+	}
+	echo "<br>";
+}
+
+?>

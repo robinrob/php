@@ -1,0 +1,27 @@
+<?php //index.php
+//Updating a file
+
+//Creating the file:
+$file = fopen("test.txt", 'w') or die("Failed to create file<br>");
+$text = <<<_END
+This is line 1.
+This is line 2.
+This is line 3.
+
+_END;
+fwrite($file, $text);
+fclose($file);
+
+//Appending text to it:
+//NOTE 'r+' - it places the file pointer at the START of the file.
+$file = fopen("test.txt", 'r+') or die("Failed to open file");
+$text = fgets($file); //Gets one line of text.
+/* Goes to the end of the file. First parameter specifies how far
+ * forwards (or backwards!) to go from the position specified by
+ * the second parameter.
+ */
+fseek($file, 0, SEEK_END);
+fwrite($file, $text) or die("Could not write to file");
+fclose($file);
+echo "File 'test.txt' successfully updated";
+?>

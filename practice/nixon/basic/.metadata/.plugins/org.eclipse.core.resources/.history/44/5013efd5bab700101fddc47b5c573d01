@@ -1,0 +1,16 @@
+<?php
+//Declaring a class and examining an object.
+$object = new User('Robin', 'password');
+
+print_r($object);
+
+class User
+{
+	public $name, $password;
+	
+	function save_user()
+	{
+		echo "Save user code goes here";
+	}
+}
+?>

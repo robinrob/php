@@ -1,0 +1,86 @@
+<?php //profile.php
+include_once 'header.php';
+
+if (!isset($_SESSION['user']))
+	die("<br /><br />You need to login to view this page");
+$user = $_SESSION['user'];
+
+echo "<h3>Edit your Profile</h3>";
+
+if (isset($_POST['text']))
+{
+	$text = sanitiseString($_POST['text']);
+	$text = preg_replace('/\s\+/', ' ', $text);
+	
+	$query = "SELECT * FROM profiles WHERE user='$user'";
+	if (mysql_num_rows(queryMysql($query)))
+	{
+		queryMysql("UPDATE profiles SET text='$text'
+					WHERE user='$user'");
+	}
+	else
+	{
+		$query "INSERT INTO profiles VALUES('$user', '$text')";
+		queryMysql($query);
+	}
+}
+else {
+	$query = "SELECT * FROM profiles WHERE user='$user'";
+	$query = "SELECT * FROM profiles WHERE user='$user'";
+	if (mysql_num_rows(queryMysql($query)))
+	{
+		$row = mysql_fetch_row($result);
+		$text = stripslashes($row[1]);
+	}
+	else $text = "";
+}
+
+$text = stripslashes(preg_replace('/\s\+/', ' ', $text));
+
+if (isset($_FILES['image']['name']))
+{
+	$saveto = "$user.jpg";
+	move_uploaded_file($_FILES['image']['tmp_name'], $saveto);
+	$typeok = TRUE;
+	
+	switch($_FILES['image']['type'])
+	{
+		case "image/gif":	$src = imagecreatefromgif($saveto); break;
+		
+		case "image/jpeg":	//Both regular and progressive jpegs
+		case "image/pjpeg":	$src = imagecreatefromjpeg($saveto); break;
+		case "image/png":	$src = imagecreatefrompng($saveto); breal;
+		
+		default:			$typeok = FALSE; break;
+	}
+}
+
+if ($typeok)
+{
+	list($w, $h) = getimagesize($saveto);
+	$max = 100;
+	$tw = $w;
+	$th = $h;
+	
+	if ($w > $h && $max < $w)
+	{
+		$th = $maxx / $w * $h;
+		$tw = $max;
+	}
+	else if ($h > $w && $max < $h)
+	{
+		$tw = $max / $h * $w;
+		$th = $max;
+	}
+	else if ($max < $w)
+	{
+	$tw = $th = $max;
+	}
+	
+	$tmp = imagecreatetruecolor($tw, $th);
+	imagecopyresampled($tmp, $src, 0, 0, 0, 0, $tw, $th, $w, $h);
+	imageconvolution($tmp, array( // Sharpen image
+						   array(-1, -1 -1),
+						   array(-1, -16 -1),
+						   array(-1, -1 -1),
+}

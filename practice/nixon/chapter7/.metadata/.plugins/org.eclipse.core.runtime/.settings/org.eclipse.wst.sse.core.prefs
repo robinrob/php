@@ -1,0 +1,3 @@
+#Thu Aug 04 12:34:05 BST 2011
+task-tag-projects-already-scanned=copy_file,date,delete_file,file_exists,read_file,write_file,file_get_contents,flock,fseek,move_file,update_file,uploading
+eclipse.preferences.version=1

@@ -1,0 +1,275 @@
+/*Global styles*/
+
+html
+{
+height: 100%;
+margin: 0;
+padding: 0;
+}
+
+body
+{
+height: 100%;
+margin: 0;
+padding: 0;
+background-image: url("images/me_on_half_dome_1280.jpg");
+}
+
+h1 
+{
+margin-bottom: 0.8em;
+font-style: italic;
+}
+
+h2
+{
+margin-bottom: 1em;
+font-size: 1.5em;
+}
+
+h3
+{
+padding-bottom: 0;
+margin-bottom: 1em;
+font-size: 1.2em;
+}
+
+h4
+{
+font-size: 1.0em;
+padding-bottom: 0;
+margin-bottom: 0;
+}
+
+h5
+{
+margin-top: 0em;
+margin-bottom: 0.3em;
+font-size: 0.8em;
+}
+
+div#page-background 
+{
+background-image: url(images/me_on_half_dome_1280.jpg);
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 166%;
+}
+
+div#content {
+position: relative;
+top: 0;
+left: 0;
+z-index: 1;
+margin-left: 10%;
+width: 80%;
+padding-bottom: 3em;
+}
+
+div#mainbox 
+{
+border: solid;
+border-width: 1px;
+background: white;
+padding: 0em 1em 1em 1em;
+/*max-height: 800px;*/
+overflow: auto;
+}
+
+div#link-menu
+{
+padding-bottom: 1em;
+padding-top: 0.8em;
+padding-right: 0em;
+}
+
+#link-menu ul
+{
+display: table-row;
+width: 100%;
+}
+
+#link-menu li
+{
+display: inline;
+list-style-type: none;
+padding-right: 1.98em;
+}
+
+#link-menu li a
+{
+font-style: italic;
+color: black;
+background: white;
+border-color: black;
+border: solid;
+border-width: thin;
+padding: 0.2em 0.4em 0em 0.2em;
+}
+
+#link-menu li a:hover
+{
+color: white;
+background: black;
+border-color: white;
+}
+
+#link-menu li a:visited:hover
+{
+color: white;
+background: black;
+border-color: white;
+}
+
+#link-menu li a:visited
+{
+color: black;
+}
+
+div#link-submenu
+{
+padding-bottom: 0em;
+padding-top: 0.5em;
+}
+
+#link-submenu ul
+{
+/*display: table-column;*/
+/*width: 100%;*/
+padding: 0 0 0 0;
+}
+
+#link-submenu li
+{
+/*display: inline;*/
+list-style-type: none;
+padding-right: 2em;
+padding-bottom: 1em;
+}
+
+#link-submenu li a
+{
+font-style: italic;
+color: black;
+background: white;
+border-color: black;
+border: solid;
+border-width: thin;
+padding: 0.2em 0.4em 0em 0.2em;
+}
+
+#link-submenu li a:hover
+{
+color: white;
+background: black;
+border-color: white;
+}
+
+#link-submenu li a:visited:hover
+{
+color: white;
+background: black;
+border-color: white;
+}
+
+#link-submenu li a:visited
+{
+color: black;
+}
+
+/*Astronomy & Photos page styles*/
+img#photo
+{
+width: 12em;
+height: 10em;
+}
+
+div#photos
+{
+padding: 0 0 0em 0;
+margin: 0em;
+}
+
+#photos ul
+{
+display: table-row;
+padding-bottom: 5em;
+}
+
+#photos li
+{
+list-style-type: none;
+display: table-cell;
+padding-right: 3.5em;
+padding-bottom: 0.5em;
+}
+
+/*end of astronomy & photos styles*/
+
+/*Programming page styles*/
+img#programming-screenshot
+{
+width: 11em;
+height: 10em;
+}
+
+div#programming-project
+{
+padding: 0 0 2em 0;
+margin: 0em;
+width: 100%;
+}
+
+#programming-project ul
+{
+display: table-row;
+}
+
+#project-description
+{
+display: table-cell;
+width: 90%;
+padding: 0 1em 0 0;
+}
+
+#project-screenshot
+{
+display: table-cell;
+width: 10%;
+}
+
+/*end of programming page styles*/
+
+/*Other stuff page styles*/
+img#other-image
+{
+width: 21em;
+height: 16em;
+}
+
+div#other-images
+{
+padding: 0 0 0em 0;
+margin: 0em;
+}
+
+#other-images ul
+{
+display: table-row;
+padding-bottom: 5em;
+}
+
+#other-images li
+{
+list-style-type: none;
+display: table-cell;
+padding-right: 1.5em;
+padding-bottom: 0.5em;
+}
+
+/*end of other stuff page styles*/
+
+
+

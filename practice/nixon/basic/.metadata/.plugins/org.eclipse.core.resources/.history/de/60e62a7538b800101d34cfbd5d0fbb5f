@@ -1,0 +1,15 @@
+<?php
+//Creating and displaying arrays.
+
+$paper = "Copier";
+$paper = "Inkjet";
+$paper = "Laser";
+$paper = "Photo";
+
+print_r(paper);
+
+for ($i = 0; $i < 4; ++$i)
+{
+	echo "<br />" . paper[$i]: " . $i;
+}
+?>

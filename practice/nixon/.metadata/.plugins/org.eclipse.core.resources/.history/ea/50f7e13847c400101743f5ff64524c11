@@ -1,0 +1,9 @@
+<!-- A multiselect calendar -->
+
+<html><head><title>YUI Calendar</title></head>
+<link rel="stylesheet"
+	type="text/css" href="fonts-min.css" />
+<link rel="stylesheet"
+	type="text/css" href="assets/skins/sam/calendar.css"
+
+</html>

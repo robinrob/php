@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;connection-min.js&apos; to &apos;chapter19&apos;" description="Move &apos;connection-min.js&apos; to &apos;chapter19&apos;" destination="/chapter19" element1="/chapter18/connection-min.js" element2="/chapter18/event-min.js" element3="/chapter18/yahoo-min.js" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="3" stamp="1313079973144" updateReferences="true"/>
+</session>

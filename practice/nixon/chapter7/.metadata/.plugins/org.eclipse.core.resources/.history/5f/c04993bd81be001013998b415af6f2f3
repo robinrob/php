@@ -1,0 +1,21 @@
+<?php //index.php
+//Different ways of using fseek().
+
+//Creating the file:
+$file = fopen("test.txt", 'w');
+$text = <<<_END
+This is line 1.
+This is line 2.
+This is line 3.
+
+_END;
+fwrite($file, $text);
+fclose($file);
+
+//SEEK_END:
+$file = fopen("test.txt", 'r');
+fseek($file, 7, SEEK_END);
+$text = "Line 2.";
+fwrite($file, $text);
+
+?>

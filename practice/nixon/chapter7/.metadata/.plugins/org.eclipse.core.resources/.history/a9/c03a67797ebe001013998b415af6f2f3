@@ -1,0 +1,18 @@
+<?php //index.php
+//Updating a file
+
+//Creating the file:
+$file = fwrite("test.txt", '+w');
+$test = <<<_END
+This is some text in a text file.
+_END;
+fclose($file);
+
+//Appending text to it:
+$file = fopen("test.txt", '+r') or die("Failed to open file");
+$text = fgets($fh);
+fseek($fh, 0, SEEK_END);
+fwrite($fh, "$text") or die("Could not write to file");
+fclose($fh);
+echo "File 'test.txt' successfully updated";
+?>

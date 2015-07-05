@@ -1,0 +1,14 @@
+<?php
+//Testing various (very useful) array functions.
+
+$test = array("Robin", 5, "Smith");
+
+n_els = count(array);
+
+$j = 0;
+foreach($array as item)
+{
+	echo "array[$j]: array[$j++]<br>";
+}
+
+?>

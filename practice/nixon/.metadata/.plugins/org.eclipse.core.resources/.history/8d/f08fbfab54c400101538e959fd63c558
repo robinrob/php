@@ -1,0 +1,10 @@
+<?php //yuisignup.php
+include_once 'header.php'
+
+echo <<<_END
+<script_src="yahoo-min.js"></script>
+<script_src="event-min.js"></script>
+<script_src="connection-min.js"></script>
+<script>
+function checkUser(user)
+{

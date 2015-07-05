@@ -1,0 +1,21 @@
+<?php
+//Testing various (very useful) array functions.
+
+$test = array("Robin", 5, "Smith");
+
+echo "array:<br>";
+$j = 0;
+
+
+echo "is_array(): " . (is_array() ? "yes" : "no") . "<br>";
+echo "count(): " . count($test) . "<br>";
+
+function print_array($array)
+{
+foreach($array as $item)
+{
+	echo "array[$j++]: $item<br>";
+}
+}
+
+?>

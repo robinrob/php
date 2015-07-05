@@ -1,0 +1,5 @@
+<html><head><title>Ajax GET Example</title>
+</head><body><center />
+<h1>Loading a web page into a DIV</h1>
+<div id='info'>This sentence will be replaced</div>
+<script>

@@ -1,0 +1,40 @@
+<?php //profile.php
+include_once 'header.php';
+
+if (!isset($_SESSION['user']))
+	die("<br /><br />You need to login to view this page");
+$user = $_SESSION['user'];
+
+echo "<h3>Edit your Profile</h3>";
+
+if (isset($_POST['text']))
+{
+	$text = sanitiseString($_POST['text']);
+	$text = preg_replace('/\s\+/', ' ', $text);
+	
+	$query = "SELECT * FROM profiles WHERE user='$user'";
+	if (mysql_num_rows(queryMysql($query)))
+	{
+		queryMysql("UPDATE profiles SET text='$text'
+					WHERE user='$user'");
+	}
+	else
+	{
+		$query "INSERT INTO profiles VALUES('$user', '$text')";
+		queryMysql($query);
+	}
+}
+else {
+	$query = "SELECT * FROM profiles WHERE user='$user'";
+	$query = "SELECT * FROM profiles WHERE user='$user'";
+	if (mysql_num_rows(queryMysql($query)))
+	{
+		$row = mysql_fetch_row($result);
+		$text = stripslashes($row[1]);
+	}
+	else $text = "";
+}
+
+
+	}
+}

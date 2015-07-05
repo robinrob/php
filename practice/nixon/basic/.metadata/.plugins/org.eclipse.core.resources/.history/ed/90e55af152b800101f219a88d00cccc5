@@ -1,0 +1,27 @@
+<?php
+//Creating and displaying arrays.
+
+$paper[] = "Copier";
+$paper[] = "Inkjet";
+$paper[] = "Laser";
+$paper[] = "Photo";
+
+print_r($paper);
+
+for ($i = 0; $i < 4; ++$i)
+{
+	echo "paper[$i]: " . $paper[$i] . "<br />";
+}
+
+//Assosciative arrays:
+
+$paper['paper'] = "Paper";
+$paper['inkjet'] = "Inkjet";
+$paper['laser'] = "Laser";
+$paper["photo"] = "Photo";
+
+echo "paper['paper']: " . $paper['paper'] . "<br />";
+echo "paper['inkjet']: " . $paper['inkjet'] . "<br />";
+echo "paper['laser']: " . $paper['laser'] . "<br />";
+echo "paper['photo']: " . $paper['photo'] . "<br />";
+?>

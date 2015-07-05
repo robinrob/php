@@ -1,0 +1,17 @@
+<?php
+
+object1 = new User;
+$object->password = "secret";
+echo "password: " . $object.get_password();
+
+
+class User
+{
+	public $name, $password;
+	
+	public get_password()
+	{
+		return $this->password;
+	}
+}
+?>

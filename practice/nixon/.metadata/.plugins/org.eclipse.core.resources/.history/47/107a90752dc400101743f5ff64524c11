@@ -1,0 +1,52 @@
+<html><head><title>Ajax Example</title>
+</head><body><center />
+<h1>Loading a web page into a DIV<h1>
+<div id='info'>This sentence will be replaced</div>
+<script>
+params = "url=oreilly.com"
+request = new ajaxRequest()
+request.open("POST", "urlpost.php", true)
+request.setRequestHeader("Content-type",
+		"application/x-www-form-urlencoded")
+request.setRequestHeader("Contact-length", params.length)
+request.setRequestHeader("Connection", "close")
+
+request.onreadystatechange = function()
+{
+	if (this.readyState == 4)
+	{
+		if (this.status == 200)
+		{
+			if (this.responseText != null)
+			{
+				document.getElementById('info').innerHTML =
+					this.responseText
+			}
+			else alert("Ajax error: No data received")
+		}
+		else alert("Ajax error: " + this.statusText)
+	}
+}
+
+request.send(params)
+
+function ajaxRequest()
+{
+	try // Non IE Browser?
+	{
+		var request = new XMLHttpRequest()
+	}
+	catch(e1)
+	{
+		try // IE 6++?
+		{
+			request = newActiveXObject("Msxml2.XMLHTTP")
+		}
+		catch(e2) // There is no Ajax Support
+		{
+			request = alse
+		}
+	}
+	return request
+}
+</script></body></html>

@@ -1,0 +1,12 @@
+<html><head><title>YUI GET Example</title>
+</head><body><center>
+<h2>Loading a web page into a DIV with YUI</h2></center>
+<div id='info'>This sentence will be replaced</div>
+<script src="yahoo-min.js"></script>
+<script src="event-min.js"></script>
+<script src="connection-min.js"></script>
+
+
+</body>
+
+</html>

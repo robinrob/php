@@ -1,0 +1,32 @@
+<?php
+/* Some of the entries in the _SERVER superglobal variable.
+ * The function htmlentities() can be used to hide the output
+ * from hackers.
+ */
+
+echo "PHP_SELF: " . htmlentities($_SERVER['PHP_SELF']) . "<br />";
+?>
+<br>
+<?php
+echo "GATEWAY_INTERFACE: " . $_SERVER['GATEWAY_INTERFACE'] . "\n";
+?>
+<br>
+<?php
+echo "SERVER_ADDR: " . $_SERVER['SERVER_ADDR'] . "\n";
+?>
+<br>
+<?php
+echo "SERVER_NAME: " . $_SERVER['SERVER_NAME'] . "\n";
+?>
+<br>
+<?php
+echo "SERVER_SOFTWARE: " . $_SERVER['SERVER_SOFTWARE'] . "\n";
+?>
+<br>
+<?php
+echo "SERVER_PROTOCOL: " . $_SERVER['SERVER_PROTOCOL'] . "\n";
+?>
+<br>
+<?php
+echo "REQUEST_METHOD: " . $_SERVER['REQUEST_METHOD'] . "\n";
+?>

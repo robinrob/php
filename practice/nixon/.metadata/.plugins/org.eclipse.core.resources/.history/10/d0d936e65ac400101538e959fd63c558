@@ -1,0 +1,39 @@
+<?php //members.php
+include_once 'header.php';
+
+if (!isset($_SESSION['user']))
+	die("<br /><br />You need to login to view this page");
+$user = $_SESSION['user'];
+
+if (isset($_GET_['view']))
+{
+	$view = sanitiseString($_GET['view']);
+	
+	if ($view == $user) $name = "Your";
+	else $name = "$view's";
+	
+	echo "<h3>$name Page</h3>";
+	showProfile($view);
+	echo "<a href='messages.php?view=$view'>$name Messages</a><br />";
+	die("<a href='friends.php'?view=$view/>$name Friends</a><br />");
+}
+
+if (isset($_GET_['add']))
+{
+	$add = sanitiseString($_GET['add']);
+	$query = "SELECT * FROM friends WHERE user='$add'
+		AND friend='$user'";
+	
+	if (!mysql_num_row(queryMysql($query)))
+	{
+		$query = "INSERT INTO friends VALUES ('$add', '$user')";
+		queryMysql($query);
+	}
+}
+else if (isset($_GET['remove']))
+{
+	$remove = sanitiseString($_GET['remove']);
+	$query = "DELETE FROM friends WHERE user='$remove'
+		AND friend='$user'";
+	queryMysql($query);
+}

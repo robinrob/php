@@ -1,0 +1,5 @@
+<html><head><title>Ajax XML Example</title>
+</head><body><center />
+<h1>Loading XML content into a DIV</h1>
+<div id='info'>This sentence will be replaced</div>
+<script>

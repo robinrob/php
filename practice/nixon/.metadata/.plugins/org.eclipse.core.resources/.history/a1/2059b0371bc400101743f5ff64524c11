@@ -1,0 +1,6 @@
+<?php //xmlget.php
+if (isset($_GET['url'])) {
+	header('Content-Type: text/XML');
+	echo file_get_contents("http://".sanitiseString($_GET['url']));
+}
+

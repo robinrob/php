@@ -1,0 +1,9 @@
+<?php
+//Defining a property implicity (fucked!)
+
+$object = new User;
+$object->name = "Alice";
+
+class User {};
+
+?>

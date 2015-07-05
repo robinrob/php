@@ -1,0 +1,4 @@
+<?php
+//Looping through a numeric array using foreach...as
+
+$paper = array("Coper")

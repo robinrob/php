@@ -1,0 +1,22 @@
+<?php
+//Testing various (very useful) array functions.
+
+$test = array("Robin", 5, "Smith");
+print_array($test);
+
+echo "is_array(): " . (is_array() ? "yes" : "no") . "<br>";
+echo "count(): " . count($test) . "<br>";
+echo "sort(): " . print_array(sort($array)) . "<br>";
+
+
+function print_array($array)
+{
+	echo "array:<br>";
+	$j = 0;
+	foreach($array as $item)
+	{
+		echo "array[" . $j++ . "]: $item<br>";
+	}
+}
+
+?>

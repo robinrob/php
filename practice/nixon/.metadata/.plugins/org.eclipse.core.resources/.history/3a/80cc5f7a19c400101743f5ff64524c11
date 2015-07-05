@@ -1,0 +1,33 @@
+<html><head><title>Ajax GET Example</title>
+</head><body><center />
+<h1>Loading a web page into a DIV</h1>
+<div id='info'>This sentence will be replaced</div>
+<script>
+
+nocache = "$nocache=" + Math.random() * 1000000
+request = new ajaxRequest()
+request.open("GET", "urlget.php?url=oreilly.com" + nocache, true)
+
+request.onreadystatechange = function()
+{
+	if (this.readyState == 4)
+	{
+		if (this.status == 200)
+		{
+			if (this.responseText != null)
+			{
+				document.getElemenyById('info').innerHTML =
+					this.responseText
+			}
+			else alert("Ajax error: No data received")
+		}
+		else alert("Ajax error: " + this.statusText)
+	}
+}
+request.send(null)
+
+
+}
+</script></body>
+
+/html>

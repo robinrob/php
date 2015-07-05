@@ -1,0 +1,553 @@
+!SESSION 2011-07-26 19:50:32.656 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product -data /home/robin/work/programming/php/basic -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.equinox.event 2 0 2011-07-26 19:50:33.313
+!MESSAGE [SCR] Found components with duplicated names! Details: 
+Component1 : Component[
+	name = org.eclipse.equinox.event
+	activate = activate
+	deactivate = deactivate
+	modified = 
+	configuration-policy = optional
+	factory = null
+	autoenable = true
+	immediate = false
+	implementation = org.eclipse.equinox.internal.event.EventComponent
+	state = Unsatisfied
+	properties = 
+	serviceFactory = false
+	serviceInterface = [org.osgi.service.event.EventAdmin]
+	references = null
+	located in bundle = org.eclipse.equinox.event_1.2.0.v20100503 [368]
+]
+Component2: Component[
+	name = org.eclipse.equinox.event
+	activate = activate
+	deactivate = deactivate
+	modified = 
+	configuration-policy = optional
+	factory = null
+	autoenable = true
+	immediate = false
+	implementation = org.eclipse.equinox.internal.event.EventComponent
+	state = Unsatisfied
+	properties = 
+	serviceFactory = false
+	serviceInterface = [org.osgi.service.event.EventAdmin]
+	references = null
+	located in bundle = org.eclipse.equinox.event_1.2.100.v20110502 [116]
+]  
+
+!ENTRY org.eclipse.ui 4 4 2011-07-26 19:50:36.778
+!MESSAGE Referenced part does not exist yet: org.eclipse.jdt.ui.PackageExplorer.
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-07-26 19:50:49.728
+!MESSAGE Indexed 'class' (0 sources, 34 headers) in 0.82 sec: 657 declarations; 788 references; 3 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.ui 4 4 2011-07-26 19:54:14.846
+!MESSAGE Referenced part does not exist yet: org.eclipse.jdt.ui.PackageExplorer.
+
+!ENTRY org.eclipse.jface.text 2 0 2011-07-26 19:54:45.092
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.extractScriptdoc(ProposalInfo.java:106)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.computeInfo(ProposalInfo.java:84)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.getInfo(ProposalInfo.java:67)
+	at org.eclipse.dltk.ui.text.completion.AbstractScriptCompletionProposal.getAdditionalProposalInfo(AbstractScriptCompletionProposal.java:440)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jface.text 2 0 2011-07-26 19:54:56.221
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.extractScriptdoc(ProposalInfo.java:106)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.computeInfo(ProposalInfo.java:84)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.getInfo(ProposalInfo.java:67)
+	at org.eclipse.dltk.ui.text.completion.AbstractScriptCompletionProposal.getAdditionalProposalInfo(AbstractScriptCompletionProposal.java:440)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jface.text 2 0 2011-07-26 19:55:10.928
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.extractScriptdoc(ProposalInfo.java:106)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.computeInfo(ProposalInfo.java:84)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.getInfo(ProposalInfo.java:67)
+	at org.eclipse.dltk.ui.text.completion.AbstractScriptCompletionProposal.getAdditionalProposalInfo(AbstractScriptCompletionProposal.java:440)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.php.core 4 10001 2011-07-26 20:11:11.762
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.jface.text.BadLocationException: 156
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getChar(BasicStructuredDocument.java:1281)
+	at org.eclipse.php.internal.core.codeassist.strategies.AbstractCompletionStrategy.getReplacementRangeWithBraces(AbstractCompletionStrategy.java:109)
+	at org.eclipse.php.internal.core.codeassist.strategies.ClassMethodsStrategy.apply(ClassMethodsStrategy.java:68)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:105)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+
+!ENTRY org.eclipse.php.core 4 10001 2011-07-26 20:11:21.974
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.jface.text.BadLocationException: 156
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getChar(BasicStructuredDocument.java:1281)
+	at org.eclipse.php.internal.core.codeassist.strategies.AbstractCompletionStrategy.getReplacementRangeWithBraces(AbstractCompletionStrategy.java:109)
+	at org.eclipse.php.internal.core.codeassist.strategies.ClassMethodsStrategy.apply(ClassMethodsStrategy.java:68)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:105)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+
+!ENTRY org.eclipse.php.core 4 10001 2011-07-26 20:11:22.698
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.jface.text.BadLocationException: 156
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getChar(BasicStructuredDocument.java:1281)
+	at org.eclipse.php.internal.core.codeassist.strategies.AbstractCompletionStrategy.getReplacementRangeWithBraces(AbstractCompletionStrategy.java:109)
+	at org.eclipse.php.internal.core.codeassist.strategies.ClassMethodsStrategy.apply(ClassMethodsStrategy.java:68)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:105)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+
+!ENTRY org.eclipse.php.core 4 10001 2011-07-26 20:11:52.362
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.jface.text.BadLocationException: 307
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getChar(BasicStructuredDocument.java:1281)
+	at org.eclipse.php.internal.core.codeassist.strategies.AbstractCompletionStrategy.getReplacementRangeWithBraces(AbstractCompletionStrategy.java:109)
+	at org.eclipse.php.internal.core.codeassist.strategies.ClassMethodsStrategy.apply(ClassMethodsStrategy.java:68)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:105)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+
+!ENTRY org.eclipse.php.core 4 10001 2011-07-26 20:11:52.649
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.jface.text.BadLocationException: 307
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getChar(BasicStructuredDocument.java:1281)
+	at org.eclipse.php.internal.core.codeassist.strategies.AbstractCompletionStrategy.getReplacementRangeWithBraces(AbstractCompletionStrategy.java:109)
+	at org.eclipse.php.internal.core.codeassist.strategies.ClassMethodsStrategy.apply(ClassMethodsStrategy.java:68)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:105)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+
+!ENTRY org.eclipse.php.core 4 10001 2011-07-26 20:11:53.107
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.jface.text.BadLocationException: 307
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getChar(BasicStructuredDocument.java:1281)
+	at org.eclipse.php.internal.core.codeassist.strategies.AbstractCompletionStrategy.getReplacementRangeWithBraces(AbstractCompletionStrategy.java:109)
+	at org.eclipse.php.internal.core.codeassist.strategies.ClassMethodsStrategy.apply(ClassMethodsStrategy.java:68)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:105)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+
+!ENTRY org.eclipse.php.core 4 10001 2011-07-26 20:22:50.141
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.jface.text.BadLocationException: 156
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getChar(BasicStructuredDocument.java:1281)
+	at org.eclipse.php.internal.core.codeassist.strategies.AbstractCompletionStrategy.getReplacementRangeWithBraces(AbstractCompletionStrategy.java:109)
+	at org.eclipse.php.internal.core.codeassist.strategies.ClassMethodsStrategy.apply(ClassMethodsStrategy.java:68)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:105)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+
+!ENTRY org.eclipse.php.core 4 10001 2011-07-26 20:22:50.375
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.jface.text.BadLocationException: 156
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getChar(BasicStructuredDocument.java:1281)
+	at org.eclipse.php.internal.core.codeassist.strategies.AbstractCompletionStrategy.getReplacementRangeWithBraces(AbstractCompletionStrategy.java:109)
+	at org.eclipse.php.internal.core.codeassist.strategies.ClassMethodsStrategy.apply(ClassMethodsStrategy.java:68)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:105)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+
+!ENTRY org.eclipse.php.core 4 10001 2011-07-26 20:23:22.359
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.jface.text.BadLocationException: 307
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getChar(BasicStructuredDocument.java:1281)
+	at org.eclipse.php.internal.core.codeassist.strategies.AbstractCompletionStrategy.getReplacementRangeWithBraces(AbstractCompletionStrategy.java:109)
+	at org.eclipse.php.internal.core.codeassist.strategies.ClassMethodsStrategy.apply(ClassMethodsStrategy.java:68)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:105)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+!SESSION 2011-07-27 10:34:46.520 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.equinox.event 2 0 2011-07-27 10:34:48.331
+!MESSAGE [SCR] Found components with duplicated names! Details: 
+Component1 : Component[
+	name = org.eclipse.equinox.event
+	activate = activate
+	deactivate = deactivate
+	modified = 
+	configuration-policy = optional
+	factory = null
+	autoenable = true
+	immediate = false
+	implementation = org.eclipse.equinox.internal.event.EventComponent
+	state = Unsatisfied
+	properties = 
+	serviceFactory = false
+	serviceInterface = [org.osgi.service.event.EventAdmin]
+	references = null
+	located in bundle = org.eclipse.equinox.event_1.2.0.v20100503 [368]
+]
+Component2: Component[
+	name = org.eclipse.equinox.event
+	activate = activate
+	deactivate = deactivate
+	modified = 
+	configuration-policy = optional
+	factory = null
+	autoenable = true
+	immediate = false
+	implementation = org.eclipse.equinox.internal.event.EventComponent
+	state = Unsatisfied
+	properties = 
+	serviceFactory = false
+	serviceInterface = [org.osgi.service.event.EventAdmin]
+	references = null
+	located in bundle = org.eclipse.equinox.event_1.2.100.v20110502 [116]
+]  
+
+!ENTRY org.eclipse.php.core 4 10001 2011-07-27 10:41:40.265
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.jface.text.BadLocationException: 156
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getChar(BasicStructuredDocument.java:1281)
+	at org.eclipse.php.internal.core.codeassist.strategies.AbstractCompletionStrategy.getReplacementRangeWithBraces(AbstractCompletionStrategy.java:109)
+	at org.eclipse.php.internal.core.codeassist.strategies.ClassMethodsStrategy.apply(ClassMethodsStrategy.java:68)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:105)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+
+!ENTRY org.eclipse.php.core 4 10001 2011-07-27 10:41:41.398
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.jface.text.BadLocationException: 156
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getChar(BasicStructuredDocument.java:1281)
+	at org.eclipse.php.internal.core.codeassist.strategies.AbstractCompletionStrategy.getReplacementRangeWithBraces(AbstractCompletionStrategy.java:109)
+	at org.eclipse.php.internal.core.codeassist.strategies.ClassMethodsStrategy.apply(ClassMethodsStrategy.java:68)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:105)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+
+!ENTRY org.eclipse.php.core 4 10001 2011-07-27 10:49:52.780
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.jface.text.BadLocationException: 156
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getChar(BasicStructuredDocument.java:1281)
+	at org.eclipse.php.internal.core.codeassist.strategies.AbstractCompletionStrategy.getReplacementRangeWithBraces(AbstractCompletionStrategy.java:109)
+	at org.eclipse.php.internal.core.codeassist.strategies.ClassMethodsStrategy.apply(ClassMethodsStrategy.java:68)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:105)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+
+!ENTRY org.eclipse.php.core 4 10001 2011-07-27 10:49:53.269
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.jface.text.BadLocationException: 156
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getChar(BasicStructuredDocument.java:1281)
+	at org.eclipse.php.internal.core.codeassist.strategies.AbstractCompletionStrategy.getReplacementRangeWithBraces(AbstractCompletionStrategy.java:109)
+	at org.eclipse.php.internal.core.codeassist.strategies.ClassMethodsStrategy.apply(ClassMethodsStrategy.java:68)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:105)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+
+!ENTRY org.eclipse.php.core 4 10001 2011-07-27 10:50:02.728
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.jface.text.BadLocationException: 156
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getChar(BasicStructuredDocument.java:1281)
+	at org.eclipse.php.internal.core.codeassist.strategies.AbstractCompletionStrategy.getReplacementRangeWithBraces(AbstractCompletionStrategy.java:109)
+	at org.eclipse.php.internal.core.codeassist.strategies.ClassMethodsStrategy.apply(ClassMethodsStrategy.java:68)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:105)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+
+!ENTRY org.eclipse.php.core 4 10001 2011-07-27 10:50:03.285
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.jface.text.BadLocationException: 156
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getChar(BasicStructuredDocument.java:1281)
+	at org.eclipse.php.internal.core.codeassist.strategies.AbstractCompletionStrategy.getReplacementRangeWithBraces(AbstractCompletionStrategy.java:109)
+	at org.eclipse.php.internal.core.codeassist.strategies.ClassMethodsStrategy.apply(ClassMethodsStrategy.java:68)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:105)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+!SESSION 2011-07-27 14:00:05.978 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.equinox.event 2 0 2011-07-27 14:00:06.655
+!MESSAGE [SCR] Found components with duplicated names! Details: 
+Component1 : Component[
+	name = org.eclipse.equinox.event
+	activate = activate
+	deactivate = deactivate
+	modified = 
+	configuration-policy = optional
+	factory = null
+	autoenable = true
+	immediate = false
+	implementation = org.eclipse.equinox.internal.event.EventComponent
+	state = Unsatisfied
+	properties = 
+	serviceFactory = false
+	serviceInterface = [org.osgi.service.event.EventAdmin]
+	references = null
+	located in bundle = org.eclipse.equinox.event_1.2.0.v20100503 [368]
+]
+Component2: Component[
+	name = org.eclipse.equinox.event
+	activate = activate
+	deactivate = deactivate
+	modified = 
+	configuration-policy = optional
+	factory = null
+	autoenable = true
+	immediate = false
+	implementation = org.eclipse.equinox.internal.event.EventComponent
+	state = Unsatisfied
+	properties = 
+	serviceFactory = false
+	serviceInterface = [org.osgi.service.event.EventAdmin]
+	references = null
+	located in bundle = org.eclipse.equinox.event_1.2.100.v20110502 [116]
+]  
+
+!ENTRY org.eclipse.ui 4 4 2011-07-27 14:01:45.347
+!MESSAGE Referenced part does not exist yet: org.eclipse.jdt.ui.PackageExplorer.
+!SESSION 2011-07-27 14:04:39.822 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product -data /home/robin/work/programming/php/basic -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.equinox.event 2 0 2011-07-27 14:04:40.483
+!MESSAGE [SCR] Found components with duplicated names! Details: 
+Component1 : Component[
+	name = org.eclipse.equinox.event
+	activate = activate
+	deactivate = deactivate
+	modified = 
+	configuration-policy = optional
+	factory = null
+	autoenable = true
+	immediate = false
+	implementation = org.eclipse.equinox.internal.event.EventComponent
+	state = Unsatisfied
+	properties = 
+	serviceFactory = false
+	serviceInterface = [org.osgi.service.event.EventAdmin]
+	references = null
+	located in bundle = org.eclipse.equinox.event_1.2.0.v20100503 [368]
+]
+Component2: Component[
+	name = org.eclipse.equinox.event
+	activate = activate
+	deactivate = deactivate
+	modified = 
+	configuration-policy = optional
+	factory = null
+	autoenable = true
+	immediate = false
+	implementation = org.eclipse.equinox.internal.event.EventComponent
+	state = Unsatisfied
+	properties = 
+	serviceFactory = false
+	serviceInterface = [org.osgi.service.event.EventAdmin]
+	references = null
+	located in bundle = org.eclipse.equinox.event_1.2.100.v20110502 [116]
+]  
+!SESSION 2011-07-27 17:03:56.410 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.equinox.event 2 0 2011-07-27 17:03:58.467
+!MESSAGE [SCR] Found components with duplicated names! Details: 
+Component1 : Component[
+	name = org.eclipse.equinox.event
+	activate = activate
+	deactivate = deactivate
+	modified = 
+	configuration-policy = optional
+	factory = null
+	autoenable = true
+	immediate = false
+	implementation = org.eclipse.equinox.internal.event.EventComponent
+	state = Unsatisfied
+	properties = 
+	serviceFactory = false
+	serviceInterface = [org.osgi.service.event.EventAdmin]
+	references = null
+	located in bundle = org.eclipse.equinox.event_1.2.0.v20100503 [368]
+]
+Component2: Component[
+	name = org.eclipse.equinox.event
+	activate = activate
+	deactivate = deactivate
+	modified = 
+	configuration-policy = optional
+	factory = null
+	autoenable = true
+	immediate = false
+	implementation = org.eclipse.equinox.internal.event.EventComponent
+	state = Unsatisfied
+	properties = 
+	serviceFactory = false
+	serviceInterface = [org.osgi.service.event.EventAdmin]
+	references = null
+	located in bundle = org.eclipse.equinox.event_1.2.100.v20110502 [116]
+]  
+!SESSION 2011-07-27 17:22:41.908 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.equinox.event 2 0 2011-07-27 17:22:42.564
+!MESSAGE [SCR] Found components with duplicated names! Details: 
+Component1 : Component[
+	name = org.eclipse.equinox.event
+	activate = activate
+	deactivate = deactivate
+	modified = 
+	configuration-policy = optional
+	factory = null
+	autoenable = true
+	immediate = false
+	implementation = org.eclipse.equinox.internal.event.EventComponent
+	state = Unsatisfied
+	properties = 
+	serviceFactory = false
+	serviceInterface = [org.osgi.service.event.EventAdmin]
+	references = null
+	located in bundle = org.eclipse.equinox.event_1.2.0.v20100503 [368]
+]
+Component2: Component[
+	name = org.eclipse.equinox.event
+	activate = activate
+	deactivate = deactivate
+	modified = 
+	configuration-policy = optional
+	factory = null
+	autoenable = true
+	immediate = false
+	implementation = org.eclipse.equinox.internal.event.EventComponent
+	state = Unsatisfied
+	properties = 
+	serviceFactory = false
+	serviceInterface = [org.osgi.service.event.EventAdmin]
+	references = null
+	located in bundle = org.eclipse.equinox.event_1.2.100.v20110502 [116]
+]  
+
+!ENTRY org.eclipse.core.resources 2 10035 2011-07-27 17:22:47.233
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2011-07-27 17:22:58.975 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.equinox.event 2 0 2011-07-27 17:22:59.649
+!MESSAGE [SCR] Found components with duplicated names! Details: 
+Component1 : Component[
+	name = org.eclipse.equinox.event
+	activate = activate
+	deactivate = deactivate
+	modified = 
+	configuration-policy = optional
+	factory = null
+	autoenable = true
+	immediate = false
+	implementation = org.eclipse.equinox.internal.event.EventComponent
+	state = Unsatisfied
+	properties = 
+	serviceFactory = false
+	serviceInterface = [org.osgi.service.event.EventAdmin]
+	references = null
+	located in bundle = org.eclipse.equinox.event_1.2.0.v20100503 [368]
+]
+Component2: Component[
+	name = org.eclipse.equinox.event
+	activate = activate
+	deactivate = deactivate
+	modified = 
+	configuration-policy = optional
+	factory = null
+	autoenable = true
+	immediate = false
+	implementation = org.eclipse.equinox.internal.event.EventComponent
+	state = Unsatisfied
+	properties = 
+	serviceFactory = false
+	serviceInterface = [org.osgi.service.event.EventAdmin]
+	references = null
+	located in bundle = org.eclipse.equinox.event_1.2.100.v20110502 [116]
+]  
+
+!ENTRY org.eclipse.core.resources 2 10035 2011-07-27 17:23:02.624
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2011-07-28 07:32:09.076 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.equinox.event 2 0 2011-07-28 07:32:11.001
+!MESSAGE [SCR] Found components with duplicated names! Details: 
+Component1 : Component[
+	name = org.eclipse.equinox.event
+	activate = activate
+	deactivate = deactivate
+	modified = 
+	configuration-policy = optional
+	factory = null
+	autoenable = true
+	immediate = false
+	implementation = org.eclipse.equinox.internal.event.EventComponent
+	state = Unsatisfied
+	properties = 
+	serviceFactory = false
+	serviceInterface = [org.osgi.service.event.EventAdmin]
+	references = null
+	located in bundle = org.eclipse.equinox.event_1.2.0.v20100503 [368]
+]
+Component2: Component[
+	name = org.eclipse.equinox.event
+	activate = activate
+	deactivate = deactivate
+	modified = 
+	configuration-policy = optional
+	factory = null
+	autoenable = true
+	immediate = false
+	implementation = org.eclipse.equinox.internal.event.EventComponent
+	state = Unsatisfied
+	properties = 
+	serviceFactory = false
+	serviceInterface = [org.osgi.service.event.EventAdmin]
+	references = null
+	located in bundle = org.eclipse.equinox.event_1.2.100.v20110502 [116]
+]  

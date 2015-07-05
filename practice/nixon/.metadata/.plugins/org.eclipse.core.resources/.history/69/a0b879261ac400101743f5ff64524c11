@@ -1,0 +1,12 @@
+<?php //urlget.php
+if (isset($_GET['url'])) {
+	echo file_get_contents("http://".sanitiseString($_GET['url']));
+}
+	
+function SanitiseString($var)
+{
+	$var = strip_tags($var);
+	$var = htmlentities($var);
+	return stripslashes($var);
+}
+?>

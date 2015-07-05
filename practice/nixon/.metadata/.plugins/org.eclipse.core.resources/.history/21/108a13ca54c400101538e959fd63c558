@@ -1,0 +1,31 @@
+<?php //yuisignup.php
+include_once 'header.php'
+
+echo <<<_END
+<script_src="yahoo-min.js"></script>
+<script_src="event-min.js"></script>
+<script_src="connection-min.js"></script>
+<script>
+function checkUser(user)
+{
+	if (user.value == '')
+	{
+		document.getElementById('info').innerHTML = ''
+		return
+	}
+	
+	params = "user=" + user.value
+	callbacl = { success:successHandler, failure:failureHandler }
+	request = YAHOO.util.Connect.asyncRequest('POST',
+		'checkuser.php', callback, params);
+}
+
+function successHandler(o)
+{
+	document.getElementById('info').innerHTML = o.responseText;
+}
+
+function failureHandler(o) {
+	document.getElementById('info').innerHTML =
+		o.status + " " + o.statusText
+}
