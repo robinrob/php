@@ -1,0 +1,3 @@
+[submodule "projects/blazers-wp-theme"]
+	path = projects/blazers-wp-theme
+	url = git@github.com:robinrob/blazers-wp-theme
